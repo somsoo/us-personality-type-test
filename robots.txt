@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://us-personality-type-test.enjoy-onepage.com/sitemap.xml
