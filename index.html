@@ -1,28 +1,466 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>16 Personality Types Test - Under maintenance</title>
-<meta name="robots" content="noindex, nofollow">
-<meta name="site-status" content="maintenance">
-<meta name="description" content="This tool is temporarily offline while it is rebuilt.">
+<title>16 Personality Types Test</title>
+<meta name="description" content="Discover your 4-letter Carl Jung personality archetype with this quick test.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://us-personality-type-test.enjoy-onepage.com/">
+<meta name="theme-color" content="#4f46e5">
+<link rel="icon" href="/favicon.ico">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="16 Personality Types Test">
+<meta property="og:title" content="16 Personality Types Test">
+<meta property="og:description" content="Discover your 4-letter Carl Jung personality archetype with this quick test.">
+<meta property="og:url" content="https://us-personality-type-test.enjoy-onepage.com/">
+<meta property="og:image" content="https://us-personality-type-test.enjoy-onepage.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="16 Personality Types Test">
+<meta name="twitter:description" content="Discover your 4-letter Carl Jung personality archetype with this quick test.">
+<meta name="twitter:image" content="https://us-personality-type-test.enjoy-onepage.com/og-image.png">
+<link rel="alternate" type="application/rss+xml" title="Personality Test RSS" href="https://us-personality-type-test.enjoy-onepage.com/rss.xml">
+<link rel="sitemap" type="application/xml" href="https://us-personality-type-test.enjoy-onepage.com/sitemap.xml">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "@id": "https://us-personality-type-test.enjoy-onepage.com/#webapp",
+      "name": "16 Personality Types Test",
+      "url": "https://us-personality-type-test.enjoy-onepage.com/",
+      "applicationCategory": "LifestyleApplication",
+      "operatingSystem": "All",
+      "inLanguage": "en",
+      "description": "An interactive psychological archetype assessment measuring Extraversion vs Introversion, Sensing vs Intuition, Thinking vs Feeling, and Judging vs Perceiving.",
+      "image": "https://us-personality-type-test.enjoy-onepage.com/og-image.png",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://us-personality-type-test.enjoy-onepage.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is this test the official Myers-Briggs Type Indicator (MBTI)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. This tool is an independent educational questionnaire based on Carl Jung's Psychological Types theory. It is not affiliated with, endorsed by, or associated with The Myers & Briggs Foundation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the four primary cognitive preference axes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The four dichotomies are: Energy Orientation (Introversion vs Extraversion), Information Gathering (Sensing vs Intuition), Decision Making (Thinking vs Feeling), and Lifestyle Structure (Judging vs Perceiving)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can my personality type change over time?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "While baseline cognitive preferences remain relatively stable, adults naturally develop their tertiary and inferior functions through career maturity, relationships, and self-reflection."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are my test answers or personality scores saved online?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. All question scoring, archetype classifications, and trait bar calculations run strictly within your local browser memory. Zero personal answers are transmitted to any external server."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<!-- ADSENSE START: loader -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2228289204702106" crossorigin="anonymous"></script>
+<!-- ADSENSE END: loader -->
 <style>
-  body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background: #f8fafc; color: #0f172a; }
-  main { max-width: 560px; margin: 12vh auto; padding: 32px 24px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; }
-  h1 { font-size: 1.4rem; margin: 0 0 12px; }
-  p { line-height: 1.6; color: #334155; }
-  a { color: #1d4ed8; font-weight: 600; }
-  .tag { display: inline-block; font-size: .8rem; font-weight: 700; color: #92400e; background: #fef3c7; border-radius: 999px; padding: 4px 10px; margin-bottom: 14px; }
+:root{--bg:#f8fafc;--card:#fff;--ink:#0f172a;--muted:#475569;--accent:#4f46e5;--accent-hover:#4338ca;--line:#e2e8f0;--purple:#7c3aed;--teal:#0d9488}
+*{box-sizing:border-box}
+html,body{margin:0;max-width:100%;overflow-x:hidden}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;overflow-wrap:anywhere}
+.header{background:linear-gradient(135deg,#3730a3,#4f46e5);color:#fff;text-align:center;padding:26px 16px 22px}
+.header h1{margin:0;font-size:1.7rem}
+.header-sub{opacity:.92;margin-top:6px;font-size:.95rem}
+.wrap{max-width:1100px;margin:0 auto;padding:12px 14px 8px}
+.grid2{display:grid;grid-template-columns:1fr;gap:14px}
+@media (min-width:1024px){.grid2{grid-template-columns:6fr 6fr;align-items:start}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 18px;margin:14px 0}
+.grid2 .card{margin:0}
+.card h2{font-size:1.15rem;margin:4px 0 10px}
+.lbl{display:block;font-weight:600;margin:12px 0 6px;font-size:.92rem}
+.btn{font:inherit;border:1px solid #cbd5e1;background:#fff;color:var(--ink);border-radius:10px;padding:8px 13px;cursor:pointer;transition:background .15s}
+.btn:hover{background:#f8fafc}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:700}
+.btn.primary:hover{background:var(--accent-hover)}
+.btn.sm{padding:4px 10px;font-size:.86rem;border-radius:8px}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+
+/* Quiz Radio Options */
+.q-group{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}
+.q-opt{display:flex;align-items:center;gap:10px;padding:8px 12px;border:1px solid #e2e8f0;border-radius:10px;cursor:pointer;background:#f8fafc;font-size:.9rem;transition:all .15s}
+.q-opt:hover{background:#eef2ff;border-color:#c7d2fe}
+.q-opt input[type=radio]{accent-color:var(--accent);transform:scale(1.2)}
+
+/* Archetype Badge */
+.type-badge{display:inline-block;padding:4px 14px;background:#eef2ff;color:var(--accent);border-radius:999px;font-size:1.4rem;font-weight:900;letter-spacing:1px}
+.trait-bar-wrap{margin:8px 0}
+.trait-label-row{display:flex;justify-content:space-between;font-size:.82rem;font-weight:700;color:var(--muted);margin-bottom:3px}
+.trait-bar{display:flex;height:10px;border-radius:5px;background:#e2e8f0;overflow:hidden}
+.trait-fill{height:100%;background:var(--accent);transition:width .2s}
+
+.metric-box{background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:12px;margin:10px 0}
+.metric-val{font-size:1.6rem;font-weight:800;color:var(--accent);margin:2px 0}
+.metric-lbl{font-size:.82rem;color:var(--muted);font-weight:600;text-transform:uppercase}
+
+.hint{font-size:.86rem;color:var(--muted);margin:6px 0}
+.notice{border-color:#fcd34d;background:#fffbeb}
+.faq-item h3{font-size:1rem;margin:12px 0 4px}
+.faq-item p{margin:0;color:#334155}
+.src{font-size:.82rem;color:var(--muted)}
+.ad-box{max-width:1100px;margin:10px auto;padding:0 14px;background:transparent;overflow:hidden;text-align:center}
+.ad-top ins{max-height:90px}
+.footer{text-align:center;font-size:.85rem;color:var(--muted);padding:18px 14px 28px}
+.footer a{color:var(--muted);text-decoration:none}
+.footer a:hover{text-decoration:underline}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#0f172a;color:#fff;padding:10px 18px;border-radius:999px;font-size:.9rem;opacity:0;pointer-events:none;transition:opacity .2s;z-index:50;max-width:90vw}
+.toast.show{opacity:1}
+@media (prefers-reduced-motion: reduce){.toast{transition:none}}
 </style>
 </head>
 <body>
-<main>
-  <span class="tag">Under maintenance</span>
+<header class="header">
   <h1>16 Personality Types Test</h1>
-  <p>This tool is temporarily offline. We found that the previous version did not work the way it was described, so we took it down while we rebuild it properly.</p>
-  <p>Please check back later.</p>
-  <p><a href="https://enjoy-onepage.com/">Browse our other free tools</a></p>
+  <div class="header-sub">Carl Jung Cognitive Archetype Assessment · 4-Dichotomy Scoring · 100% Private</div>
+</header>
+
+<!-- ADSENSE START: top -->
+<div class="ad-box ad-top">
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2228289204702106" data-ad-slot="3824727725" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<!-- ADSENSE END: top -->
+
+<main class="wrap">
+  <div class="grid2">
+    <!-- Questionnaire Card -->
+    <section class="card" aria-labelledby="quiz-h">
+      <h2 id="quiz-h">🧠 8-Question Cognitive Inventory</h2>
+
+      <!-- Q1: Energy -->
+      <label class="lbl">1. After a demanding week, how do you recharge?</label>
+      <div class="q-group">
+        <label class="q-opt"><input type="radio" name="qEI1" value="I" checked> Quiet time alone with a book, hobby, or solitary project (Introversion)</label>
+        <label class="q-opt"><input type="radio" name="qEI1" value="E"> Going out with friends, socializing, or meeting new people (Extraversion)</label>
+      </div>
+
+      <!-- Q2: Social Setting -->
+      <label class="lbl">2. In a bustling social gathering, you typically:</label>
+      <div class="q-group">
+        <label class="q-opt"><input type="radio" name="qEI2" value="I" checked> Interact deeply with a few close individuals you already know (Introversion)</label>
+        <label class="q-opt"><input type="radio" name="qEI2" value="E"> Mingle broadly across different groups with high energy (Extraversion)</label>
+      </div>
+
+      <!-- Q3: Information Focus -->
+      <label class="lbl">3. When learning something new, you prefer focusing on:</label>
+      <div class="q-group">
+        <label class="q-opt"><input type="radio" name="qSN1" value="N" checked> Abstract concepts, underlying theories, and future possibilities (Intuition)</label>
+        <label class="q-opt"><input type="radio" name="qSN1" value="S"> Concrete facts, tangible evidence, and practical hands-on details (Sensing)</label>
+      </div>
+
+      <!-- Q4: Problem Solving -->
+      <label class="lbl">4. When approaching complex problems, you tend to rely on:</label>
+      <div class="q-group">
+        <label class="q-opt"><input type="radio" name="qSN2" value="N" checked> Big-picture vision and innovative unconventional patterns (Intuition)</label>
+        <label class="q-opt"><input type="radio" name="qSN2" value="S"> Proven precedents, step-by-step checklists, and real experiences (Sensing)</label>
+      </div>
+
+      <!-- Q5: Decisions -->
+      <label class="lbl">5. When making important decisions, you prioritize:</label>
+      <div class="q-group">
+        <label class="q-opt"><input type="radio" name="qTF1" value="T" checked> Objective logic, detached rationality, and analytical criteria (Thinking)</label>
+        <label class="q-opt"><input type="radio" name="qTF1" value="F"> Personal empathy, group harmony, and human emotional impact (Feeling)</label>
+      </div>
+
+      <!-- Q6: Feedback -->
+      <label class="lbl">6. When critiquing work, you believe it is better to be:</label>
+      <div class="q-group">
+        <label class="q-opt"><input type="radio" name="qTF2" value="T" checked> Candid, direct, and intellectually honest (Thinking)</label>
+        <label class="q-opt"><input type="radio" name="qTF2" value="F"> Diplomatic, tactful, and protective of others' feelings (Feeling)</label>
+      </div>
+
+      <!-- Q7: Planning -->
+      <label class="lbl">7. Your approach to daily life and deadlines is usually:</label>
+      <div class="q-group">
+        <label class="q-opt"><input type="radio" name="qJP1" value="J" checked> Structured with clear schedules, to-do lists, and early planning (Judging)</label>
+        <label class="q-opt"><input type="radio" name="qJP1" value="P"> Flexible, spontaneous, adaptable, and open to changing options (Perceiving)</label>
+      </div>
+
+      <!-- Q8: Work Environment -->
+      <label class="lbl">8. You feel most comfortable when projects have:</label>
+      <div class="q-group">
+        <label class="q-opt"><input type="radio" name="qJP2" value="J" checked> Defined milestones, clear closure, and predictable roadmaps (Judging)</label>
+        <label class="q-opt"><input type="radio" name="qJP2" value="P"> Creative freedom, loose deadlines, and room for improvisation (Perceiving)</label>
+      </div>
+
+      <div class="actions">
+        <button type="button" id="btnScore" class="btn primary">Recalculate Type</button>
+        <button type="button" id="btnReset" class="btn">Reset to Standard</button>
+      </div>
+      <p class="hint">Updates live on all selection changes. 100% client-side privacy.</p>
+    </section>
+
+    <!-- Archetype Results Card -->
+    <section class="card" aria-labelledby="results-h">
+      <h2 id="results-h">🧭 Archetype Diagnosis &amp; Profile</h2>
+
+      <div class="metric-box" style="text-align:center">
+        <div id="resTypeCode" class="type-badge">INTJ</div>
+        <div id="resTypeTitle" style="font-size:1.3rem;font-weight:800;color:var(--ink);margin:6px 0 2px">The Strategic Architect</div>
+        <div id="resTypeGroup" class="hint" style="margin:0">Analyst Archetype · Introverted Intuitive Thinker</div>
+      </div>
+
+      <label class="lbl">Dichotomy Score Breakdown</label>
+      <div class="trait-bar-wrap">
+        <div class="trait-label-row"><span>Introversion (I)</span><span id="lblEI">100% I</span><span>Extraversion (E)</span></div>
+        <div class="trait-bar"><div id="barEI" class="trait-fill" style="width:100%"></div></div>
+      </div>
+      <div class="trait-bar-wrap">
+        <div class="trait-label-row"><span>Intuition (N)</span><span id="lblSN">100% N</span><span>Sensing (S)</span></div>
+        <div class="trait-bar"><div id="barSN" class="trait-fill" style="width:100%"></div></div>
+      </div>
+      <div class="trait-bar-wrap">
+        <div class="trait-label-row"><span>Thinking (T)</span><span id="lblTF">100% T</span><span>Feeling (F)</span></div>
+        <div class="trait-bar"><div id="barTF" class="trait-fill" style="width:100%"></div></div>
+      </div>
+      <div class="trait-bar-wrap">
+        <div class="trait-label-row"><span>Judging (J)</span><span id="lblJP">100% J</span><span>Perceiving (P)</span></div>
+        <div class="trait-bar"><div id="barJP" class="trait-fill" style="width:100%"></div></div>
+      </div>
+
+      <div style="border-top:1px solid var(--line);padding-top:10px;margin-top:12px">
+        <div style="font-weight:700;margin-bottom:4px">Key Strengths:</div>
+        <p id="resStrengths" style="font-size:.88rem;color:#334155;margin:0 0 8px">Visionary strategic thinking, high independence, intense intellectual curiosity, structured execution.</p>
+
+        <div style="font-weight:700;margin-bottom:4px">Potential Blindspots:</div>
+        <p id="resBlindspots" style="font-size:.88rem;color:#334155;margin:0 0 8px">Impatience with inefficiency, overlooking emotional nuances, overanalyzing simple interactions.</p>
+
+        <div style="font-weight:700;margin-bottom:4px">Aligned Careers:</div>
+        <p id="resCareers" style="font-size:.88rem;color:var(--accent);font-weight:600;margin:0">Systems Architecture, Scientific Research, Strategic Management, Software Engineering, Economics.</p>
+      </div>
+
+      <div class="actions" style="margin-top:14px">
+        <button type="button" id="btnCopyProfile" class="btn primary sm">📋 Copy Archetype Summary</button>
+        <button type="button" id="btnShareApp" class="btn sm">🔗 Share Quiz</button>
+      </div>
+    </section>
+  </div>
+
+  <!-- ADSENSE START: mid -->
+  <div class="ad-box ad-mid">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2228289204702106" data-ad-slot="1186914926" data-ad-format="rectangle" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+  <!-- ADSENSE END: mid -->
+
+  <!-- Educational Guide -->
+  <section class="card" aria-labelledby="guide-h">
+    <h2 id="guide-h">📖 Psychological Theory: Carl Jung's Cognitive Types</h2>
+    <p>The 16 cognitive personality archetypes originate from Swiss psychiatrist Carl Gustav Jung's 1921 treatise <em>Psychologische Typen</em> (Psychological Types):</p>
+    <ul>
+      <li><strong>Cognitive Functions:</strong> Jung posited that conscious experience is mediated through four core mental functions: two perceiving functions (Sensing and Intuition) and two judging functions (Thinking and Feeling), directed either inwardly (Introverted) or outwardly (Extraverted).</li>
+      <li><strong>Constructive Self-Understanding:</strong> Identifying your cognitive inclinations assists in recognizing communication mismatches, reducing team friction, and crafting career paths tailored to natural neurological preferences.</li>
+      <li><strong>Independent Educational Purpose:</strong> This questionnaire is designed solely for self-exploration and personal development based on publicly discussed typology frameworks.</li>
+    </ul>
+    <p class="src">Theoretical references: Jung C.G. (1921) <em>Psychological Types</em>; Sharp D. (1987) <em>Personality Types: Jung's Model of Typology</em>.</p>
+  </section>
+
+  <section class="card" id="faq" aria-labelledby="faq-h">
+    <h2 id="faq-h">❓ Frequently Asked Questions</h2>
+    <div class="faq-item"><h3>Is this test the official Myers-Briggs Type Indicator (MBTI)?</h3><p>No. This tool is an independent educational questionnaire based on Carl Jung's Psychological Types theory. It is not affiliated with, endorsed by, or associated with The Myers &amp; Briggs Foundation.</p></div>
+    <div class="faq-item"><h3>What are the four primary cognitive preference axes?</h3><p>The four dichotomies are: Energy Orientation (Introversion vs Extraversion), Information Gathering (Sensing vs Intuition), Decision Making (Thinking vs Feeling), and Lifestyle Structure (Judging vs Perceiving).</p></div>
+    <div class="faq-item"><h3>Can my personality type change over time?</h3><p>While baseline cognitive preferences remain relatively stable, adults naturally develop their tertiary and inferior functions through career maturity, relationships, and self-reflection.</p></div>
+    <div class="faq-item"><h3>Are my test answers or personality scores saved online?</h3><p>No. All question scoring, archetype classifications, and trait bar calculations run strictly within your local browser memory. Zero personal answers are transmitted to any external server.</p></div>
+  </section>
+
+  <section class="card notice" aria-labelledby="note-h">
+    <h2 id="note-h">⚠️ Non-Affiliation Disclaimer</h2>
+    <p>This assessment is an independent educational questionnaire inspired by Carl Jung's psychological typology. It is not the official Myers-Briggs Type Indicator® (MBTI®) assessment and has no connection with The Myers &amp; Briggs Foundation or CPP, Inc.</p>
+  </section>
 </main>
+
+<!-- ADSENSE START: bottom -->
+<div class="ad-box ad-bottom">
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2228289204702106" data-ad-slot="3416334507" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<!-- ADSENSE END: bottom -->
+
+<footer class="footer">
+  <p>Free 16 Personality Types Test · 100% private and client-side.</p>
+  <p><a href="/disclaimer.html">Disclaimer</a> | <a href="/privacy.html">Privacy Policy</a> | <a href="/terms.html">Terms of Service</a></p>
+</footer>
+
+<div id="global-ux-toast" class="toast" role="status" aria-live="polite"></div>
+
+<!-- LOGIC START -->
+<script>
+(function () {
+  'use strict';
+  var SITE = 'https://us-personality-type-test.enjoy-onepage.com';
+  var TOOL_NAME = '16 Personality Types Test';
+
+  var ARCHETYPES = {
+    'INTJ': { title: 'The Strategic Architect', group: 'Analyst Archetype', str: 'Visionary strategic thinking, high independence, intense intellectual curiosity.', blind: 'Impatience with inefficiency, overanalyzing simple interactions.', careers: 'Systems Architecture, Scientific Research, Strategic Management, Software Engineering.' },
+    'INTP': { title: 'The Logician / Thinker', group: 'Analyst Archetype', str: 'Inventive intellect, analytical precision, objective problem solving.', blind: 'Procrastination, difficulty executing routine administrative details.', careers: 'Theoretical Physics, Computer Science, Data Science, Philosophy.' },
+    'ENTJ': { title: 'The Commander / Executive', group: 'Analyst Archetype', str: 'Decisive leadership, strategic restructuring, bold efficiency.', blind: 'Intolerance of excuses, domineering presence in consensus settings.', careers: 'Corporate Leadership, Entrepreneurship, Law, Management Consulting.' },
+    'ENTP': { title: 'The Visionary Debater', group: 'Analyst Archetype', str: 'Rapid ideation, cognitive versatility, verbal agility.', blind: 'Losing interest after conception, debating for pure recreation.', careers: 'Venture Capital, Product Innovation, Marketing Strategy, Creative Direction.' },
+    'INFJ': { title: 'The Insightful Advocate', group: 'Diplomat Archetype', str: 'Deep empathy, quiet determination, principled idealism.', blind: 'Burnout from emotional absorption, perfectionistic standards.', careers: 'Psychology, Writing, Organizational Development, Human Rights Law.' },
+    'INFP': { title: 'The Empathetic Mediator', group: 'Diplomat Archetype', str: 'Deep authenticity, creative expression, compassionate insight.', blind: 'Vulnerability to harsh criticism, difficulty with rigid systems.', careers: 'Creative Writing, Counseling, Non-Profit Leadership, Fine Arts.' },
+    'ENFJ': { title: 'The Inspiring Protagonist', group: 'Diplomat Archetype', str: 'Charismatic communication, genuine mentorship, group cohesion.', blind: 'Neglecting self-care to please others, over-identifying with others’ problems.', careers: 'Public Relations, Educational Leadership, Team Coaching, Diplomacy.' },
+    'ENFP': { title: 'The Spirited Campaigner', group: 'Diplomat Archetype', str: 'Contagious enthusiasm, social warmth, creative boundary-pushing.', blind: 'Over-committing to too many ideas, disorganization with follow-through.', careers: 'Journalism, Creative Branding, Event Design, Motivational Speaking.' },
+    'ISTJ': { title: 'The Responsible Inspector', group: 'Sentinel Archetype', str: 'Meticulous reliability, principled duty, structured thoroughness.', blind: 'Resistance to sudden changes, judgmental of untested novel methods.', careers: 'Auditing, Financial Accounting, Civil Engineering, Operations Management.' },
+    'ISFJ': { title: 'The Dedicated Defender', group: 'Sentinel Archetype', str: 'Warm protectiveness, quiet loyalty, incredible practical support.', blind: 'Difficulty establishing boundaries, reluctant to accept help.', careers: 'Healthcare Administration, Nursing, Elementary Education, Human Resources.' },
+    'ESTJ': { title: 'The Efficient Director', group: 'Sentinel Archetype', str: 'Operational excellence, high productivity, straightforward clarity.', blind: 'Rigid adherence to established protocols, perceived bluntness.', careers: 'Project Management, Law Enforcement, Financial Direction, Supply Chain.' },
+    'ESFJ': { title: 'The Supportive Provider', group: 'Sentinel Archetype', str: 'Warm hospitality, strong community focus, reliable cooperation.', blind: 'Hypersensitivity to conflict, anxiety about social status.', careers: 'Healthcare Practice Management, Hospitality, Public School Administration.' },
+    'ISTP': { title: 'The Versatile Craftsman', group: 'Explorer Archetype', str: 'Calm under crisis, mechanical mastery, practical problem-solving.', blind: 'Emotional detachment, aversion to long-term bureaucratic commitments.', careers: 'Mechanical Engineering, Aviation, Cybersecurity, Emergency Medicine.' },
+    'ISFP': { title: 'The Artistic Adventurer', group: 'Explorer Archetype', str: 'Sensory awareness, gentle harmony, living in the present moment.', blind: 'Conflict avoidance, unpredictable focus on long-term financial plans.', careers: 'Graphic Design, Culinary Arts, Landscape Architecture, Physical Therapy.' },
+    'ESTP': { title: 'The Dynamic Dynamo', group: 'Explorer Archetype', str: 'Bold action, sharp situational awareness, persuasive charisma.', blind: 'Impulsivity, impatient with theoretical lectures.', careers: 'Real Estate Development, Emergency Response, High-Stakes Sales, Sports Coaching.' },
+    'ESFP': { title: 'The Vibrant Entertainer', group: 'Explorer Archetype', str: 'Radiant energy, aesthetic sensitivity, making people feel valued.', blind: 'Easily bored with repetitive paperwork, conflict avoidance.', careers: 'Performing Arts, Event Management, Luxury Sales, Public Relations.' }
+  };
+
+  function $(id) { return document.getElementById(id); }
+
+  function showToast(msg) {
+    var toast = $('global-ux-toast');
+    if (!toast) return;
+    toast.textContent = msg;
+    toast.classList.add('show');
+    clearTimeout(toast._tid);
+    toast._tid = setTimeout(function () { toast.classList.remove('show'); }, 2200);
+  }
+
+  function getRadio(name) {
+    var el = document.querySelector('input[name="' + name + '"]:checked');
+    return el ? el.value : '';
+  }
+
+  function scoreQuiz() {
+    var ei1 = getRadio('qEI1');
+    var ei2 = getRadio('qEI2');
+    var sn1 = getRadio('qSN1');
+    var sn2 = getRadio('qSN2');
+    var tf1 = getRadio('qTF1');
+    var tf2 = getRadio('qTF2');
+    var jp1 = getRadio('qJP1');
+    var jp2 = getRadio('qJP2');
+
+    var countE = (ei1 === 'E' ? 1 : 0) + (ei2 === 'E' ? 1 : 0);
+    var countI = 2 - countE;
+    var letterEI = countE > countI ? 'E' : 'I';
+
+    var countS = (sn1 === 'S' ? 1 : 0) + (sn2 === 'S' ? 1 : 0);
+    var countN = 2 - countS;
+    var letterSN = countN > countS ? 'N' : 'S';
+
+    var countT = (tf1 === 'T' ? 1 : 0) + (tf2 === 'T' ? 1 : 0);
+    var countF = 2 - countT;
+    var letterTF = countT > countF ? 'T' : 'F';
+
+    var countJ = (jp1 === 'J' ? 1 : 0) + (jp2 === 'J' ? 1 : 0);
+    var countP = 2 - countJ;
+    var letterJP = countJ > countP ? 'J' : 'P';
+
+    var type = letterEI + letterSN + letterTF + letterJP;
+    var info = ARCHETYPES[type] || ARCHETYPES['INTJ'];
+
+    $('resTypeCode').textContent = type;
+    $('resTypeTitle').textContent = info.title;
+    $('resTypeGroup').textContent = info.group;
+    $('resStrengths').textContent = info.str;
+    $('resBlindspots').textContent = info.blind;
+    $('resCareers').textContent = info.careers;
+
+    // Bars
+    var pctI = countI === 2 ? 100 : (countI === 1 ? 50 : 0);
+    var pctN = countN === 2 ? 100 : (countN === 1 ? 50 : 0);
+    var pctT = countT === 2 ? 100 : (countT === 1 ? 50 : 0);
+    var pctJ = countJ === 2 ? 100 : (countJ === 1 ? 50 : 0);
+
+    $('lblEI').textContent = (letterEI === 'I' ? (pctI + '% I') : ((100 - pctI) + '% E'));
+    $('barEI').style.width = (letterEI === 'I' ? pctI : (100 - pctI)) + '%';
+
+    $('lblSN').textContent = (letterSN === 'N' ? (pctN + '% N') : ((100 - pctN) + '% S'));
+    $('barSN').style.width = (letterSN === 'N' ? pctN : (100 - pctN)) + '%';
+
+    $('lblTF').textContent = (letterTF === 'T' ? (pctT + '% T') : ((100 - pctT) + '% F'));
+    $('barTF').style.width = (letterTF === 'T' ? pctT : (100 - pctT)) + '%';
+
+    $('lblJP').textContent = (letterJP === 'J' ? (pctJ + '% J') : ((100 - pctJ) + '% P'));
+    $('barJP').style.width = (letterJP === 'J' ? pctJ : (100 - pctJ)) + '%';
+  }
+
+  document.querySelectorAll('input[type=radio]').forEach(function (r) {
+    r.addEventListener('change', scoreQuiz);
+  });
+
+  $('btnScore').addEventListener('click', function () {
+    scoreQuiz();
+    showToast('Recalculated archetype: ' + $('resTypeCode').textContent);
+  });
+
+  $('btnReset').addEventListener('click', function () {
+    document.querySelector('input[name="qEI1"][value="I"]').checked = true;
+    document.querySelector('input[name="qEI2"][value="I"]').checked = true;
+    document.querySelector('input[name="qSN1"][value="N"]').checked = true;
+    document.querySelector('input[name="qSN2"][value="N"]').checked = true;
+    document.querySelector('input[name="qTF1"][value="T"]').checked = true;
+    document.querySelector('input[name="qTF2"][value="T"]').checked = true;
+    document.querySelector('input[name="qJP1"][value="J"]').checked = true;
+    document.querySelector('input[name="qJP2"][value="J"]').checked = true;
+    scoreQuiz();
+    showToast('Reset to INTJ archetype');
+  });
+
+  $('btnCopyProfile').addEventListener('click', function () {
+    var type = $('resTypeCode').textContent;
+    var title = $('resTypeTitle').textContent;
+    var text = '🧭 Carl Jung Archetype: ' + type + ' - ' + title + '\n' +
+      '• Strengths: ' + $('resStrengths').textContent + '\n' +
+      '• Careers: ' + $('resCareers').textContent + '\n\n' +
+      'Assessed via ' + TOOL_NAME + ': ' + SITE + '/';
+
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(function () {
+        showToast('Archetype summary copied!');
+      });
+    } else {
+      showToast('Could not copy automatically.');
+    }
+  });
+
+  $('btnShareApp').addEventListener('click', function () {
+    var shareMsg = '🧭 Free 16 Personality Types Test\n👉 ' + TOOL_NAME + ': ' + SITE + '/';
+    if (navigator.share) {
+      navigator.share({ title: TOOL_NAME, text: shareMsg, url: SITE + '/' }).catch(function (e) {
+        if (!e || e.name !== 'AbortError') showToast('Link ready to share!');
+      });
+    } else {
+      showToast('Quiz URL: ' + SITE + '/');
+    }
+  });
+
+  scoreQuiz();
+})();
+</script>
+<!-- LOGIC END -->
 </body>
 </html>
